@@ -21,6 +21,15 @@ The repository is organized into several key folders and files, each serving a s
 - **Folder:** `frames`
 - **Description:** Contains images extracted per second from the video file `finalVideo.mp4`. These frames are used for testing and refining our object detection algorithms.
 
+### BLE
+
+- **Folder:** `BLE`
+- **Description:** 
+  - `bluetooth_model.py` contains code for detecting the bluetooth device as well as coe to train on the SVM Model. Output: `device_count(latest).csv`
+; `device_name(latest).csv`
+- `device_count(latest).csv` contain the number of device detected.
+- `device_name(latest).csv` contain the name of device detected.
+
 ### Sound Analytics
 
 - **Folder:** `soundAnalytics`
