@@ -21,6 +21,15 @@ The repository is organized into several key folders and files, each serving a s
 - **Folder:** `frames`
 - **Description:** Contains images extracted per second from the video file `finalVideo.mp4`. These frames are used for testing and refining our object detection algorithms.
 
+### Sound Analytics
+
+- **Folder:** `soundAnalytics`
+- **Description:** 
+  - `Data Preprocessing.py` contains code for preprocessing on `data_for_training.wav` (around 15 minutes audio). Output: `finalVideo_svm_features_final_data.csv`.
+  - `finalVideo_svm_features_final_data_updated.csv` includes manual label of the presence of bus.
+  - `SVM_Model_Training.py` contains code to train on the SVM model. Output:  `bus_detection_model.pkl` and  `feature_scalar_file.pkl`.
+  - `Prediction.py` contains code to make prediction base on the models. Input:`finalVideo.wav` or `silence_testdata.wav` ; Output:  `finalVideo_predictions.csv`.
+
 ### Tasks Documentation
 
 - **File:** `tasks.pdf`
